@@ -3,7 +3,7 @@ from ..repository.userrepository import UserRepository
 
 user = Blueprint('user', __name__)
 
-user_repository = UserRepository("mongodb://localhost:27017/","rentacar")
+user_repository = UserRepository("mongodb://172.17.241.66:27017/","rentacar")
 
 @user.route('/users', methods=['GET'])
 def get_all_users():

@@ -5,8 +5,8 @@ from app.repository.userrepository import UserRepository
 
 car = Blueprint('car', __name__)
 
-car_repository = CarRepository("mongodb://localhost:27017/","rentacar")
-user_repository = UserRepository("mongodb://localhost:27017/","rentacar")
+car_repository = CarRepository("mongodb://172.17.241.66:27017/","rentacar")
+user_repository = UserRepository("mongodb://172.17.241.66:27017/","rentacar")
 
 @car.route('/cars', methods=['GET'])
 def get_all_cars():
